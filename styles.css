@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR SECTION */
+
+.navigator{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./body\ image.png);
+    background-position: center;
+    background-size: cover;
+    animation-name: reveal;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    position: relative;
+}
+
+
+@keyframes reveal {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+  }
+  
+
+  .reveal {
+    opacity: 0; 
+    animation: reveal 2s ease-out forwards; 
+  }
+  
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.logo{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+span{
+    color: aqua;
+}
+
+nav > ul > li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav > ul > li > a{
+    color: white;
+    font-weight: bold;
+}
+
+nav > ul > li > a:hover{
+    color: aqua;
+    transition: 0.8s;
+}
+
+/* HOME SECTION */
+
+.content{
+    position:absolute ;
+    padding-top: 150px;
+    padding-left: 100px;
+    animation-name: reveal;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    position: relative;
+}
+
+
+@keyframes reveal {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+  }
+  
+
+  .reveal {
+    opacity: 0; 
+    animation: reveal 2s ease-out forwards;
+  }
+
+
+h1{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 55px;
+}
+
+h3{
+    color: white;
+    font-size: 27px;
+}
+
+h4{
+    color:bisque ;
+    font-size: 25px;
+}
+
+/* ABOUT SECTION */
+
+#about{
+    width: 100%;
+    padding: 90px, 0;
+    background-color: rgb(26, 25, 25);
+    position: relative;
+    animation-name: fadeInLeft;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .fade-in-left {
+    opacity: 0;
+    animation: fadeInLeft 1s ease-out forwards;
+  }
+  
+
+#about img{
+    height: 400px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.hero-text{
+    width: 500px;
+}
+
+.hero{
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-text > h2{
+    color: white;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero-text > h5{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.hero-text > p{
+    color: rgb(240, 208, 208);
+    font-size: 14px;
+}
+
+/* CLASS = SCHOOLING */
+
+.school-text{
+    width: 550px;
+    margin-left: 70px;
+}
+
+.school-text > h5{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.school-text > p{
+    color: rgb(240, 208, 208);
+    font-size: 14px;
+}
+
+#about > .schooling > img{
+    height: 200px;
+    width: 400px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    transition: 0.8s;
+}
+
+#about > .schooling > img:hover{
+    transform: scale(1.1);
+}
+
+.schooling{
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* SKILLS SECTION */
+
+#skills{
+    width: 100%;
+    padding: 90px, 0;
+    background-color: rgb(20, 20, 20);
+    position: relative;
+    animation-name: fadeInRight;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+
+@keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(20px); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); 
+    }
+  }
+  
+  .fade-in-right {
+    opacity: 0;
+    animation: fadeInRight 2s ease-out forwards; 
+  }
+
+
+/* CLASS HTML */
+
+.html > img{
+    height: 150px;
+    width: 300px;
+    margin-top: 80px;
+    transition: 0.8s;
+}
+
+.html > img:hover{
+    transform: scale(1.1);
+}
+
+.html-text{
+    width: 550px;
+}
+
+.html{
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.html-text > h2{
+    color: white;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.html-text > p{
+    color: rgb(240, 208, 208);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.html-text > h5{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+/* CLASS CSS */
+
+.css > img{
+    height: 150px;
+    width: 300px;
+    margin-top: 40px;
+    transition: 0.8s;
+}
+
+.css > img:hover{
+    transform: scale(1.1);
+}
+
+.css-text{
+    width: 550px;
+}
+
+.css{
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.css-text > h5{
+    color: white;
+    font-size: 22px;
+    margin-top: 35px;
+}
+
+.css-text > p{
+    color: rgb(240, 208, 208);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* CLASS JAVASCRIPT */
+
+.javascript > img{
+    height: 150px;
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    transition: 0.8s;
+}
+
+.javascript > img:hover{
+    transform: scale(1.1);
+}
+
+.js-text{
+    width: 600px;
+    margin-left: 70px;
+}
+
+.javascript{
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.js-text > h5{
+    color: white;
+    font-size: 22px;
+    margin-top: 35px;
+}
+
+.js-text > p{
+    color: rgb(240, 208, 208);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* SECTION PROJECT */
+
+#project{
+    width: 100%;
+    padding: 90px, 0;
+    background-color: rgb(43, 42, 42);
+    position: relative;
+    animation-name: fadeInLeft;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); 
+    }
+  }
+  
+  .fade-in-left {
+    opacity: 0; 
+    animation: fadeInLeft 2s ease-out forwards; 
+  }
+  
+
+/* CLASS EDIT */
+
+.edit > img{
+    height: 200px;
+    width: 300px;
+    margin-top: 80px;
+    transition: 0.8s;
+}
+
+.edit > img:hover{
+    transform: scale(1.1);
+}
+
+.edit-text{
+    width: 550px;
+}
+
+.edit{
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.edit-text > h2{
+    color: white;
+    font-size: 45px;
+    margin-bottom: 70px;
+}
+
+.edit-text > p{
+    color: rgb(240, 208, 208);
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+/* CLASS GALAXY */
+
+.galaxy > img{
+    height: 200px;
+    width: 300px;
+    margin-top: 40px;
+    transition: 0.8s;
+}
+
+.galaxy > img:hover{
+    transform: scale(1.1);
+}
+
+.galaxy-text{
+    width: 550px;
+}
+
+.galaxy{
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.galaxy-text > p{
+    color: rgb(240, 208, 208);
+    font-size: 14px;
+}
+
+/* CLASS CODE */
+
+.code > img{
+    height: 200px;
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    transition: 0.8s;
+}
+
+.code > img:hover{
+    transform: scale(1.1);
+}
+
+.code-text{
+    width: 550px;
+}
+
+.code{
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.code-text > p{
+    color: rgb(240, 208, 208);
+    font-size: 14px;
+}
+
+/* SECTION CONTACT */
+
+#contact{
+    width: 100%;
+    padding: 90px, 0;
+    background-color: grey;
+}
+
+.call-text{
+    width: 550px;
+}
+
+.call-text{
+    color: rgb(240, 208, 208);
+    font-size: 14px;
+
+}
+
+h2{
+    color: white;
+    font-size: 45px;
+    padding: 10px;
+}
+
+.call{
+    display: flex;
+    gap: 70px;
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.call-form > form > input,
+.call-form > form > textarea{
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 5px;
+    outline: none;
+    resize: none;
+}
+
+.call-form > form > button{
+    font-size: 16px;
+    color: white;
+    background-color: rgb(72, 68, 68);
+    border: none;
+    height: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+@media(max-width){
+    
+}
